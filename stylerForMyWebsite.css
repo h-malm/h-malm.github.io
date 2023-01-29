@@ -392,6 +392,10 @@ h3 {
         width: 17px;
     }
 
+	.categorybox {
+        font-size: smaller;
+    }
+	
     .tableOfImages {
         columns: 1;
         margin-left: 0;
