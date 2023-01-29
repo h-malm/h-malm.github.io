@@ -1,0 +1,141 @@
+
+ <!DOCTYPE html>
+
+<head>
+    <title>H. Malm</title>
+    <link rel="stylesheet" href="stylerForMyWebsite.css">
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<body>
+    <div class="navbar">
+    <b><div class="header"> H. Malm</div></b>
+        <div class="subnav">
+            <a href="myWebsite.html"><div class="card"> Home </div></a>
+            <a href="myWebsite.html"><div class="card"> Categories </div></a>         
+            <a href="myWebsite.html"><div class="card"> About Me </div></a>
+            <a href="myWebsite.html"><div class="card"> CV </div></a>
+        </div>
+
+        <div>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+              <div class='ball'>
+            </label>
+            <script>
+                const checkbox = document.getElementById('checkbox');
+                checkbox.addEventListener('change', ()=>{
+                  document.body.classList.toggle('dark');
+                })
+            </script>
+        </div>
+        </div>
+    </div>
+    <div class="left_col"> 
+        <p> Welcome to my website! I am a Computer Engineering student from Finland and this is one of my hobby projects. 
+            I am currently working on my Bachelor's Thesis and looking for a place to work within the field of 
+            Information Technology, preferably Software Developement (as it is one of my main interests). 
+            Sorry in advance, for the abundance of cat-pictures. 
+            <br><br>
+            Feel free to take a look around my website! And keep in mind that it is under construction, so not every link works.</p>
+        <div class="grid_categories">
+            <a href="https://www.linkedin.com/in/hilda-malm-73b6b922b/"><div class="category">LinkedIn</div></a>
+            <a href="myWebsite.html"><div class="category">Instagram</div></a>
+        </div> 
+        
+        <div class="row"> 
+            <img src="_DSC0120.JPG" />
+                <img src="_DSC0313.JPG" />
+                <img src="_DSC0352.JPG" />
+                <img src="_DSC0141.JPG" />
+                <img src="_DSC0165.JPG" />
+                <img src="_DSC0166.JPG" />
+                <img src="_DSC0093.JPG" />
+                <img src="_DSC0180.JPG" />
+                <img src="_DSC0008.JPG" />
+                <img src="_DSC0011.JPG" />
+                <img src="P9060813.JPG" />
+                <img src="P9060829.JPG" />
+                <img src="P9090901.JPG" />
+                <img src="P9090911.JPG" />
+                <img src="P9090881.JPG" />
+                <img src="P9090882.JPG" />
+                <img src="P9090904.JPG" />
+                <img src="IMG_2653.JPG" />
+                <img src="IMG_20220925_185414.jpg" />
+                <img src="P9020523.JPG" />
+                <img src="IMG_20220529_223024.jpg" />
+                <img src="IMG_20220415_165304__01.jpg" />
+                <img src="IMG_20220204_211508.jpg" />
+                <img src="IMG_20211114_120934.jpg" />
+                <img src="IMG_20210922_161848.jpg" />
+                <img src="_DSC0019.JPG" />
+                <img src="_DSC0029.JPG" />
+                <img src="_DSC0100.JPG" />
+                <img src="_DSC0106.JPG" />
+                <img src="_DSC0109.JPG" />
+                <img src="_DSC0187.JPG" />
+                <img src="_DSC0233.JPG" />
+                <img src="_DSC0262.JPG" />
+                <img src="_DSC0267.JPG" />
+                <img src="_DSC0020.JPG" />
+                <img src="_DSC0194.JPG" />
+                <img src="_DSC0246.JPG" />
+                <img src="P8059033.JPG" />
+                <img src="IMG_0053.JPG" />
+                <img src="P9030609.JPG" />
+                <img src="P9060751.JPG" />
+                <img src="P9060746.JPG" />
+                <img src="P9060792.JPG" />
+
+                <img src="P8059117.JPG" />
+                <img src="P9030551.JPG" />
+                <img src="P9030593.JPG" />
+                <img src="P9040637.JPG" />
+                <img src="P9060724.JPG" />
+                <img src="P9050656.JPG" />
+                <img src="P9060736.JPG" />
+                <img src="P9060762.JPG" />
+                <img src="P9090904.JPG" />
+                <img src="PA210078.JPG" />
+                <img src="_DSC0005.JPG" />
+                <img src="_DSC0029.JPG" />
+                <img src="" />
+                <img src="" />
+                <img src="" />
+                <img src="" />
+                <img src="" />
+                <img src="" />
+                <img src="" />
+                <img src="" />
+                <img src="" />
+                <img src="" />
+                <img src="" />
+                <img src="" />
+          </div>
+    </div>
+
+    <button class="open-button" onclick="openForm()">Email Me</button>
+    <div class="chat-popup" id="myForm">
+        <form action="mailto:xah.malm@proton.me"
+            method="POST"
+            enctype="multipart/form-data"
+            name="EmailForm"
+            class="form-container">
+            <p>Email me</p>
+            <input placeholder="Your email address..." type="email" name="Contact-Email"> 
+            <input placeholder="Type message..." name="Contact-Message" required>
+            <button type="submit" class="btn" value="Send">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() { document.getElementById("myForm").style.display = "block"; }
+        function closeForm() { document.getElementById("myForm").style.display = "none"; }
+    </script>
+
+</body>
+</html>
