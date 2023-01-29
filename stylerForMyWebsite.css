@@ -289,12 +289,12 @@ h3 {
 
 .categorybox {
     padding: 5px;
-    margin-top: 10px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-top: 20px;
+    margin-left: 35%;
+    width: 70px;
     background: var(--e);
     border-radius: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-size: small;
     color: var(--c);
     box-shadow: 0 5px 5px var(--pillShadowD), 0 0 0 5px var(--pillShadowTop);
@@ -395,6 +395,8 @@ h3 {
 
     .categorybox {
         font-size: smaller;
+        position:relative;
+        margin-left: 5px;  
     }
     .tableOfImages {
         columns: 1;
