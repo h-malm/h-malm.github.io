@@ -280,6 +280,11 @@ h3 {
     opacity: 1;
 }
 
+@media screen and (min-width: 2000px) {
+    .row {
+        columns: 9;
+    }
+}
 
 @media screen and (max-width: 900px) {
     .card {
