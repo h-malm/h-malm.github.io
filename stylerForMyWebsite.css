@@ -351,3 +351,45 @@ h3 {
     }
 
 }
+
+
+.category_nav {
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.categorybox {
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+    background: var(--e);
+    border-radius: 60px;
+    margin-bottom: 30px;
+    color: var(--c);
+    box-shadow: 0 5px 5px var(--pillShadowD), 0 0 0 5px var(--pillShadowTop);
+}
+
+.categorybox:hover {
+    background-color: var(--a);
+}
+
+.tableOfImages:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.tableOfImages {
+    columns: 2;
+    margin: 30px;
+}
+
+.tableOfImages img {
+    width: 95%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
