@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    <title>H. Malm</title>
+    <link rel="stylesheet" href="stylerForMyWebsite.css">
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<body>
+    <div class="navbar">
+    <b><div class="header"> H. Malm</div></b>
+        <div class="subnav">
+            <a href="myWebsite.html"><div class="card"> Home </div></a>
+            <a href="categories.html"><div class="card"> Categories </div></a>         
+            <a href="myWebsite.html"><div class="card"> About Me </div></a>
+            <a href="myWebsite.html"><div class="card"> CV </div></a>
+        </div>
+
+        <!--<div>
+            <input type="checkbox" id="mode" class="checkbox" id="checkbox">
+            <label for="mode" for="checkbox" class="label">
+              <div class='ball'><script src="jscode.js"></script></div>
+            </label>
+            
+        </div>-->
+        </div>
+    </div>
+    <div class="left_col"> 
+        <div class="category_nav">
+            <h3>General</h3>
+        </div>
+        <div class="tableOfImages"><!--general-->
+                
+            <img src="DSC0166.jpg" >
+            <img src="DSC0005.jpg" />
+            <img src="DSC0246.jpg" />
+            <img src="P8059033.jpg" >
+            <img src="DSC0008.jpg" />
+            <img src="DSC0180.jpg" >
+            <img src="DSC0109.jpg" />
+            <img src="DSC0352.jpg" />
+            <img src="DSC0141.jpg" />
+            <img src="P9060724.jpg" >
+            <img src="P9030593.jpg" >
+            <img src="DSC0011.jpg" />
+            <img src="P9090904.jpg" >
+            <img src="P9060736.jpg" >
+            <img src="PA210078.jpg" >
+            <img src="P9060813.jpg" >
+            <img src="IMG_20220925_185414.jpg" >
+            <img src="P9020523.jpg" >
+            <img src="IMG_20220529_223024.jpg" >
+            <img src="IMG_20220204_211508.jpg" >
+            <img src="P9060751.jpg" />
+            <img src="P9060746.jpg" />
+            <img src="P9060792.jpg" />
+            <img src="P8059117.jpg" />
+        </div>
+    </div>
+
+    <button class="backbtn" type="button" onclick="javascript:history.back()">Back</button>
+    
+    
+    <button class="open-button" onclick="openForm()">Email Me</button>
+    <div class="chat-popup" id="myForm">
+        <form action="mailto:xah.malm@proton.me"
+            method="POST"
+            enctype="multipart/form-data"
+            name="EmailForm"
+            class="form-container">
+            <p>Email me</p>
+            <input placeholder="Your email address..." type="email" name="Contact-Email"> 
+            <input placeholder="Type message..." name="Contact-Message" required>
+            <button type="submit" class="btn" value="Send">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    
+
+    <script>
+        function openForm() { document.getElementById("myForm").style.display = "block"; }
+        function closeForm() { document.getElementById("myForm").style.display = "none"; }
+    </script>
+
+</body>
+</html>

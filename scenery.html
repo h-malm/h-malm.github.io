@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <title>H. Malm</title>
+    <link rel="stylesheet" href="stylerForMyWebsite.css">
+</head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<body>
+    <div class="navbar">
+    <b><div class="header"> H. Malm</div></b>
+        <div class="subnav">
+            <a href="myWebsite.html"><div class="card"> Home </div></a>
+            <a href="categories.html"><div class="card"> Categories </div></a>         
+            <a href="myWebsite.html"><div class="card"> About Me </div></a>
+            <a href="myWebsite.html"><div class="card"> CV </div></a>
+        </div>
+
+        <!--<div>
+            <input type="checkbox" id="mode" class="checkbox" id="checkbox">
+            <label for="mode" for="checkbox" class="label">
+              <div class='ball'><script src="jscode.js"></script></div>
+            </label>
+            
+        </div>-->
+        </div>
+    </div>
+    <div class="left_col"> 
+        <div class="category_nav">
+            <h3>Scenery</h3>
+        </div>
+        <div class="tableOfImages"><!--scenery-->
+            <img src="DSC0165.jpg" >
+            <img src="P9060829.jpg" >
+            <img src="DSC0187.jpg" />
+            <img src="P9090901.jpg" >
+            <img src="P9060762.jpg" />
+            <img src="P9090911.jpg" >
+            <img src="P9090881.jpg" >
+            <img src="P9090882.jpg" >
+            <img src="DSC0029.jpg" />
+            <img src="P9090904.jpg" >
+            <img src="IMG_0053.jpg" />
+            <img src="P9030609.jpg" />
+            <img src="P9040637.jpg" />
+            <img src="DSC0313.jpg" />
+            <img src="DSC0194.jpg" />
+            <img src="P9030551.jpg" />
+            <img src="P9050656.jpg" />
+            <img src="DSC0187.jpg" />
+        </div>
+    </div>
+
+    <button class="backbtn" type="button" onclick="javascript:history.back()">Back</button>
+    
+    
+    <button class="open-button" onclick="openForm()">Email Me</button>
+    <div class="chat-popup" id="myForm">
+        <form action="mailto:xah.malm@proton.me"
+            method="POST"
+            enctype="multipart/form-data"
+            name="EmailForm"
+            class="form-container">
+            <p>Email me</p>
+            <input placeholder="Your email address..." type="email" name="Contact-Email"> 
+            <input placeholder="Type message..." name="Contact-Message" required>
+            <button type="submit" class="btn" value="Send">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    
+
+    <script>
+        function openForm() { document.getElementById("myForm").style.display = "block"; }
+        function closeForm() { document.getElementById("myForm").style.display = "none"; }
+    </script>
+
+</body>
+</html>
